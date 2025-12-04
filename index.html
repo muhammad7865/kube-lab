@@ -1,1 +1,104 @@
-<h1>Hello from Kubernetes!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello from Kubernetes!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0b1120, #1e293b);
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      padding: 2.5rem 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.6);
+      text-align: center;
+      max-width: 480px;
+      width: 100%;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #cbd5f5;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.15);
+      color: #bfdbfe;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      border-top: 1px solid rgba(55, 65, 81, 0.8);
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+      background: rgba(15, 23, 42, 0.9);
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.35rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">
+      <span class="dot"></span>
+      <span>Pod is running</span>
+    </div>
+
+    <!-- Your original heading -->
+    <h1>Hello from Kubernetes!</h1>
+
+    <p>
+      If you can see this page, your Kubernetes deployment is working correctly.
+      You’re successfully serving a web application from a containerized
+      environment. 🎉
+    </p>
+
+    <div class="meta">
+      <p>
+        Served by: <code>kube-lab</code> |
+        Managed by: <code>ku

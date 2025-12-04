@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kube-html-container
-          image: kube-html
+          image: kube-lab-app:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
