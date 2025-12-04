@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-html-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kube-html
+  template:
+    metadata:
+      labels:
+        app: kube-html
+    spec:
+      containers:
+        - name: kube-html-container
+          image: kube-html
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
